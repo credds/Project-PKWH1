@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <!-- Remixicon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+        crossorigin="anonymous">
+    <style>
+        /* Custom CSS untuk tata letak */
+        .jumbotron {
+            padding: 11rem 0;
+            margin-bottom: -1rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            background-color: #eaeaea;
+        }
+
+        footer {
+            background-color: #262626;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .navbar-text {
+            color: white;
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: black;
+            text-decoration: none; /* Optional: hilangkan dekorasi garis bawah */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid d-flex justify-content-center">
+            <span class="navbar-text text-center">
+                Free standard Shipping on all Orders over $45
+            </span>
+        </div>
+    </nav>
+
+     <!-- Main Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="home_view.html"><img src="assets/img/logo.png" alt="Logo" style="max-height: 40px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="collection1.html">Collection 1</a>
+                    <a class="nav-item nav-link" href="collection2.html">Collection 2</a>
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="#"><i class="ri-search-line" style="font-size: 24px;"></i></a>
+                    <a class="nav-item nav-link" href="cart.html"><i class="ri-shopping-cart-line"
+                            style="font-size: 24px;"></i></a>
+                    <a class="nav-item nav-link" href="login.html"><i class="ri-account-circle-fill"
+                            style="font-size: 24px;"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Shipping -->
+            <div class="col-md-8 order-md-1">
+                <a href="shipping.html">
+                    <i class="ri-arrow-left-line"></i> back to Shipping Method
+                </a>
+                <hr>
+                <img src="assets/img/logo.png" alt="logo">
+                <h4 class="mb-3"><b>Payment</b></h4>
+                <form class="needs-validation" novalidate="">                    
+                    <div class="mb-3 position-relative">
+                        <label for="address">Name</label>
+                        <div id="address" class="form-control">Nadeem Anargya</div>
+                        <span class="change-text"><u>Change</u></span>
+                    </div>
+
+                    <div class="mb-3 position-relative">
+                        <label for="address">Address</label>
+                        <div id="address" class="form-control">Bintaro</div>
+                        <span class="change-text"><u>Change</u></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="shippingMethod">shipping method</label>
+                        <select class="custom-select d-block w-100" id="shippingMethod" required="">
+                            <option value="">STANDARD (7-10 BUSINESS DAYS) - $8.50</option>
+                            <option value="8.50">STANDARD (7-10 BUSINESS DAYS) - $8.50</option>
+                            <option value="15.00">EXTENDED (14-21 BUSINESS DAYS) - $15.00</option>
+                            <option value="22.50">EXPEDITED - GROUND (2-4 BUSINESS DAYS) - $22.50</option>
+                        </select>
+                        <div class="invalid-feedback">Please select a shipping method.</div>
+                    </div>
+                    
+                    
+                    <div class="mb-3 text-center">
+                        <img src="assets/img/midwinter-caps.png" alt="" class="img-fluid rounded">
+                    </div>                   
+
+                    
+
+                    <!-- payment -->
+                    <hr class="mb-4">
+                <h4 class="mb-3">Payment</h4>
+                <div class="d-block my-3">
+                    <div class="custom-control custom-radio">
+                        <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                        <label class="custom-control-label" for="credit">Credit card</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="debit">Debit card</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-name">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback"> Name on card is required </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cc-number">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                        <div class="invalid-feedback"> Credit card number is required </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-expiration">Expiration</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                        <div class="invalid-feedback"> Expiration date required </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cc-cvv">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                        <div class="invalid-feedback"> Security code required </div>
+                    </div>
+                </div>
+
+                    <hr class="mb-4">
+                    <a href="success.html" button class="btn btn-dark btn-lg btn-block" type="submit">Pay</a>
+                </form>
+            </div>
+
+            <!-- Your Cart -->
+<div class="col-md-4 order-md-2 mb-4">
+    <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">1</span>
+    </h4>
+    <ul class="list-group mb-3 sticky-top">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div class="image">
+                <img src="assets/img/cap1.png" alt="Wool 59FIFTY Fitted" style="max-height: 60px;">
+                <div class="ml-3">
+                    <h6 class="my-0">Wool 59FIFTY Fitted</h6>
+                    <small class="text-muted">New York Yankees</small>
+                </div>
+            </div>
+            <span class="text-muted">$41.99</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+                <h6 class="my-0">Promo code</h6>
+            </div>
+            <span class="text-success">-$0</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <span>Shipping</span>
+            <strong>$8.50</strong>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$50.49</strong>
+        </li>
+        
+    </ul>
+    <form class="card p-2">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+        </div>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white mt-5" style="background-color: #262626;">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Eighty Cap</h5>
+                    <p>
+                        Join Our Email List 
+                    </p>
+                    <div class="input-group input-group-sm mb-3">
+                        <input type="text" class="form-control bg-dark text-white" placeholder="Enter Your Email" aria-label="Email Address">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">About</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#!" class="text-white">How we started</a></li>
+                        <li><a href="#!" class="text-white">Work With Us</a></li>
+                        <li><a href="#!" class="text-white">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="text-white">Help & FAQs</a></li>
+                        <li><a href="#!" class="text-white">COntact Us</a></li>
+                        <li><a href="#!" class="text-white">Refund Policy</a></li>
+                        <li><a href="#!" class="text-white">Terms Of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 EIGHTY CAPS
+            <a class="text-white" href="https://newera.com/">Eighty Indonesia</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk5KVwTxVn4TV9kpk0wG0AtwEw8Dc5b9+X4"
+        crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

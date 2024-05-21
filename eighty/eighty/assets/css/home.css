@@ -1,0 +1,50 @@
+.jumbotron {
+    padding: 11rem 0;
+    margin-bottom: -1rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #eaeaea;
+}
+
+/* Ubah warna latar belakang footer */
+footer {
+    background-color: #262626;
+}
+
+.navbar-text {
+    color: white;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: black;
+    text-decoration: none; /* Optional: hilangkan dekorasi garis bawah */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <!-- Remixicon CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="tracking.css">
+    <style>
+        /* Custom CSS for layout */
+        .jumbotron {
+            padding: 11rem 0;
+            margin-bottom: -1rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            background-color: #eaeaea;
+        }
+
+        a {
+            color: black;
+            text-decoration: none; /* Optional: remove underline decoration */
+        }
+
+        /* Custom CSS for centering buttons */
+        .center-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100" style="background-color: #eaeaea;">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12">
+                    <div class="card card-stepper" style="border-radius: 16px;">
+
+                        <div class="card-body p-5">
+
+                            <div class="d-flex justify-content-between align-items-center mb-5">
+                                <div>
+                                    <h5 class="mb-0">Tracking History</span></h5>
+                                </div>
+                                <div class="text-end">
+                                    <p class="mb-0">Expected Arrival <span>15/05/24</span></p>
+                                    <p class="mb-0">USPS <span class="font-weight-bold">00000000000000000</span></p>
+                                </div>
+                            </div>
+
+                            <ul id="progressbar-2" class="d-flex justify-content-between mx-0 mt-0 mb-5 px-0 pt-0 pb-2">
+                                <li class="step0 active text-center" id="step1"></li>
+                                <li class="step0 active text-center" id="step2"></li>
+                                <li class="step0 active text-center" id="step3"></li>
+                                <li class="step0 text-muted text-end" id="step4"></li>
+                            </ul>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-lg-flex align-items-center">
+                                    <i class="fas fa-clipboard-list fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                    <div>
+                                        <p class="fw-bold mb-1">Order</p>
+                                        <p class="fw-bold mb-0">has been read</p>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-center">
+                                    <i class="fas fa-box-open fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                    <div>
+                                        <p class="fw-bold mb-1">Order</p>
+                                        <p class="fw-bold mb-0">has been packed</p>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-center">
+                                    <i class="fas fa-shipping-fast fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                    <div>
+                                        <p class="fw-bold mb-1">Order</p>
+                                        <p class="fw-bold mb-0">being picked up by the courier</p>
+                                    </div>
+                                </div>
+                                <div class="d-lg-flex align-items-center">
+                                    <i class="fas fa-home fa-3x me-lg-4 mb-3 mb-lg-0"></i>
+                                    <div>
+                                        <p class="fw-bold mb-1">Order</p>
+                                        <p class="fw-bold mb-0">Arrived</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Detail Item -->
+                        <div class="card-footer p-4">
+                            <h5 class="mb-4">Item Details</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="mb-2"><strong>Item:</strong>
+                                        Wool 59FIFTY Fitted</p>
+                                        <p class="mb-2"><strong>Amount:</strong> 1</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="mb-2"><strong>Order ID:</strong> 123456</p>
+                                        <p class="mb-2"><strong>Payment Type:</strong> Credit Card</p>
+                                        <p class="mb-2"><strong>Transaction Time:</strong> 5 March 2023 - 00:00</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Buttons -->
+                            <div class="card-footer p-4 center-buttons">
+                                <a href="history.html" type="button" class="btn btn-outline-dark mr-2">Back</a>
+                                <a href="home_view.html" type="button" class="btn btn-dark">Go to Home</a>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+    
+    </html>
+    
